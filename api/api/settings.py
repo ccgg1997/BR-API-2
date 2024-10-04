@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "drf_spectacular",
     # local apps
     "api.user_custom",
+    "api.customer",
 ]
 
 MIDDLEWARE = [
@@ -107,7 +108,7 @@ DATABASES = {
     }
 }
 
-AUTH_USER_MODEL = 'user_custom.UserCustom'
+AUTH_USER_MODEL = "user_custom.UserCustom"
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators

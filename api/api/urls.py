@@ -21,9 +21,11 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from rest_framework.routers import DefaultRouter
 
 from api.user_custom import views as user_views
+from api.customer import views as customer_views
 
 router = DefaultRouter()
 router.register(r"user", user_views.UserCustomViewSet, basename="user")
+router.register(r"customer", customer_views.CustomerViewSet, basename="customer")
 
 urlpatterns = [
     path("admin/", admin.site.urls),

@@ -1,0 +1,27 @@
+# Packages
+django
+dotenv
+
+# Commands
+
+#crear proyecto
+django-admin startproject drfcommerce
+./manage.py runserver
+
+#crear app
+python .\manage.py startapp product .\drfecommerce\product
+
+#crear keys
+from django.core.management.utils import get_random_secret_key
+print (get_random_sec ) 
+
+#generar requirements
+pip freeze > requirements.txt
+
+#generar coverage del codigo 
+pytest --cov
+
+#generar html de coverage:
+coverage run -m pytest
+
+python manage.py createsuperuser
